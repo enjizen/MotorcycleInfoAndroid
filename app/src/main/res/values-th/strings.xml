@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_type_motor">เลือกประเภทรถจักรยานยนต์</string>
+    <string name="title_main">หน้าหลัก</string>
+    <string name="title_select_type">เลือกประเภทรถจักรยานต์</string>
+</resources>

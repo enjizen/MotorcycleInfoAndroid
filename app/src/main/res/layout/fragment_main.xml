@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cockatoo.enjizen.motorcycleinfo.fragment.MainFragment">
+
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/yamaha"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/ic_yamaha"
+        android:scaleType="centerCrop"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/honda"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/ic_honda"
+        android:scaleType="centerCrop"
+        />
+
+
+</LinearLayout>
