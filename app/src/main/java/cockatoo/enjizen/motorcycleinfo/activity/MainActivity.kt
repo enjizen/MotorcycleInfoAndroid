@@ -2,11 +2,13 @@ package cockatoo.enjizen.motorcycleinfo.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 
 import cockatoo.enjizen.motorcycleinfo.R
 import cockatoo.enjizen.motorcycleinfo.fragment.MainFragment
 import cockatoo.enjizen.motorcycleinfo.fragment.MotorcycleTypeFragment
-import kotlinx.android.synthetic.main.toolbar.*
+
+
 
 class MainActivity : AppCompatActivity(),MainFragment.FragmentListener
                                         ,MotorcycleTypeFragment.FragmentListener {
@@ -34,7 +36,7 @@ class MainActivity : AppCompatActivity(),MainFragment.FragmentListener
 
 
     override fun onSetTitleToolbar( title: String) {
-        titleToolbar.text = title
+       // titleToolbar.text = title
     }
 
 }

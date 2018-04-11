@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 
 import cockatoo.enjizen.motorcycleinfo.R
+import cockatoo.enjizen.motorcycleinfo.constant.CommonConstant
+import cockatoo.enjizen.motorcycleinfo.constant.MotorBrand
+import kotlinx.android.synthetic.main.fragment_motorcycle_type.*
 
 
 /**
@@ -20,7 +23,7 @@ class MotorcycleTypeFragment : Fragment() {
     companion object {
         fun newInstance(brand: String): MotorcycleTypeFragment {
             val bundle = Bundle()
-            bundle.putString("brand", brand)
+            bundle.putString(CommonConstant.BRAND, brand)
             val fragment = MotorcycleTypeFragment()
             fragment.arguments = bundle
             return fragment
@@ -42,6 +45,26 @@ class MotorcycleTypeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         listener!!.onSetTitleToolbar(getString(R.string.title_select_type))
+
+        when(arguments!!.getString(CommonConstant.BRAND)){
+            MotorBrand.YAMAHA -> {
+                imageBrand.setImageResource(R.drawable.ic_yamaha)
+                backgroundBrand.setBackgroundResource(R.drawable.background_yamaha)
+            }
+            MotorBrand.HONDA ->{
+                imageBrand.setImageResource(R.drawable.ic_honda)
+                backgroundBrand.setBackgroundResource(R.drawable.background_honda)
+            }
+            MotorBrand.SUZUKI -> {
+                imageBrand.setImageResource(R.drawable.ic_suzuki)
+                backgroundBrand.setBackgroundResource(R.drawable.background_suzuki)
+            }
+            MotorBrand.KAWASAKI ->{
+                imageBrand.setImageResource(R.drawable.ic_kawasaki)
+                backgroundBrand.setBackgroundResource(R.drawable.background_kawasaki)
+            }
+        }
+
     }
 
 

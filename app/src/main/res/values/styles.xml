@@ -8,4 +8,62 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="Motorcycle">
+        <!-- <item name="fontPath">font/Sri Sury Wongse.otf</item>-->
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="Motorcycle.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Motorcycle.White.ExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_large</item>
+    </style>
+
+    <style name="Motorcycle.White.ExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_large</item>
+    </style>
+
+    <style name="Motorcycle.White.ExtraExtraExtraLarge">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_extra_large</item>
+    </style>
+
+    <style name="Motorcycle.White.Large">
+        <item name="android:textSize">@dimen/default_text_size_large</item>
+    </style>
+
+    <style name="Motorcycle.White.Small">
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+    </style>
+
+    <style name="Motorcycle.White.Smaller">
+        <item name="android:textSize">@dimen/default_text_size_smaller</item>
+    </style>
+
+    <style name="Motorcycle.White.Smaller.Dp">
+        <item name="android:textSize">@dimen/default_text_size_smaller_dp</item>
+    </style>
+
+    <style name="Motorcycle.White.ExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_small</item>
+    </style>
+
+    <style name="Motorcycle.White.ExtraExtraExtraSmall">
+        <item name="android:textSize">@dimen/default_text_size_extra_extra_extra_small</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
 </resources>

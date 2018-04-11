@@ -1,30 +1,95 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="cockatoo.enjizen.motorcycleinfo.fragment.MainFragment">
 
 
-
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/yamaha"
-        android:adjustViewBounds="true"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        app:srcCompat="@drawable/ic_yamaha"
-        android:scaleType="centerCrop"
-        />
+        android:layout_height="match_parent">
 
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/honda"
-        android:adjustViewBounds="true"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        app:srcCompat="@drawable/ic_honda"
-        android:scaleType="centerCrop"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/background_yamaha">
 
-</LinearLayout>
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/yamaha"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_yamaha" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/background_honda">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/honda"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_honda" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/background_suzuki">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/suzuki"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_suzuki" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/background_kawasaki">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/kawasaki"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_kawasaki" />
+
+            </FrameLayout>
+
+           <!-- <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/background_kawasaki">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/kawasakis"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_kawasaki" />
+
+            </FrameLayout>-->
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
