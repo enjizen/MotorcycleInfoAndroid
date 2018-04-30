@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import cockatoo.enjizen.motorcycleinfo.R
+import cockatoo.enjizen.motorcycleinfo.constant.MotorBrand
 import kotlinx.android.synthetic.main.fragment_main.*
 
 
@@ -48,12 +49,21 @@ class MainFragment : Fragment() {
     private fun setListener() {
 
         yamaha.setOnClickListener {
-            listener!!.onBrandClick("YAMAHA")
+            listener!!.onBrandClick(MotorBrand.YAMAHA)
         }
 
         honda.setOnClickListener {
-            listener!!.onBrandClick("HONDA")
+            listener!!.onBrandClick(MotorBrand.HONDA)
         }
+
+        suzuki.setOnClickListener {
+            listener!!.onBrandClick(MotorBrand.SUZUKI)
+        }
+
+        kawasaki.setOnClickListener {
+            listener!!.onBrandClick(MotorBrand.KAWASAKI)
+        }
+
     }
 
 

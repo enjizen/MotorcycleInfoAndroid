@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
+    <FrameLayout
+        android:id="@+id/backgroundBrand"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imageBrand"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_yamaha"
+        android:scaleType="centerInside"
+        />
+
+    </FrameLayout>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        tools:listitem="@layout/item_motorycycle_type_recycle_view" />
+        tools:listitem="@layout/item_motorcycle_type_recycle_view" />
 
-</RelativeLayout>
+</LinearLayout>

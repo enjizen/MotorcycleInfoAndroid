@@ -1,5 +1,6 @@
 package cockatoo.enjizen.motorcycleinfo.util
 
+import com.google.gson.Gson
 import org.jetbrains.anko.*
 
 /**
@@ -10,26 +11,22 @@ object Log: AnkoLogger {
     private const val isShow = true
 
     fun i(tag: String, msg: String){
-        if(isShow) {
             info { "$tag : $msg" }
-        }
+    }
+
+    fun i(tag: String, msg: Any){
+        info { "$tag : ${Gson().toJson(msg)}" }
     }
 
     fun d(tag: String, msg: String){
-        if(isShow){
             debug { "$tag : $msg" }
-        }
     }
 
     fun e(tag: String, msg: String){
-        if(isShow){
             error { "$tag : $msg" }
-        }
     }
 
     fun v(tag: String, msg: String){
-        if(isShow){
             verbose { "$tag : $msg"  }
-        }
     }
 }
