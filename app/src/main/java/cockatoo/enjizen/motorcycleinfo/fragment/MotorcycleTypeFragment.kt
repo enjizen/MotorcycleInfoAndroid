@@ -49,19 +49,15 @@ class MotorcycleTypeFragment : Fragment() {
         when(arguments!!.getString(CommonConstant.BRAND)){
             MotorBrand.YAMAHA -> {
                 imageBrand.setImageResource(R.drawable.ic_yamaha)
-                //backgroundBrand.setBackgroundResource(R.drawable.background_yamaha)
             }
             MotorBrand.HONDA ->{
                 imageBrand.setImageResource(R.drawable.ic_honda)
-                //backgroundBrand.setBackgroundResource(R.drawable.background_honda)
             }
             MotorBrand.SUZUKI -> {
                 imageBrand.setImageResource(R.drawable.ic_suzuki)
-               // backgroundBrand.setBackgroundResource(R.drawable.background_suzuki)
             }
             MotorBrand.KAWASAKI ->{
                 imageBrand.setImageResource(R.drawable.ic_kawasaki)
-                //backgroundBrand.setBackgroundResource(R.drawable.background_kawasaki)
             }
         }
 
